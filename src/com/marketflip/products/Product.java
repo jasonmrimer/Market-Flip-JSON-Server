@@ -51,26 +51,6 @@ public class Product {
 		this.weight = weight;
 	}
 
-	/**
-	 * Returns if the product can reasonably be considered a match with the current Product.
-	 * @param product The product to compare to this object.
-	 * @return boolean Returns true if the product is a reasonable match. 
-	 */
-	public boolean equals(Product product) {
-		if (this.UPC == product.getUPC()) {
-			return true;
-		} else if (this.UNSPSC == product.getUNSPSC()) {
-			return true;
-		} else if (this.description == product.getDescription()) {
-			return true;
-		} else if (this.name == product.getName()) {
-			if (this.weight * 1.1 >= product.getWeight() && this.weight * 0.9 <= product.getWeight()) {
-				return true;
-			}
-		}
-		return false;
-	}
-
 	public String getName() {
 		return name;
 	}
@@ -157,6 +137,53 @@ public class Product {
 
 	public void setWeight(double weight) {
 		this.weight = weight;
+	}
+
+	/**
+	 * Returns if the product can reasonably be considered a match with the
+	 * current Product.
+	 * 
+	 * @param product
+	 *            The product to compare to this object.
+	 * @return int Returns 1 if the product is a match, 0 if the product is not
+	 *         a match.
+	 */
+	public int compareTo(Product product) {
+		if (this.UPC == product.getUPC()) {
+			return 1;
+		} else if (this.UNSPSC == product.getUNSPSC()) {
+			return 1;
+		} else if (this.description == product.getDescription()) {
+			return 1;
+		} else if (this.name == product.getName()) {
+			if (this.weight * 1.1 >= product.getWeight() && this.weight * 0.9 <= product.getWeight()) {
+				return 1;
+			}
+		}
+		return 0;
+	}
+
+	/**
+	 * Returns if the product can reasonably be considered a match with the
+	 * current Product.
+	 * 
+	 * @param product
+	 *            The product to compare to this object.
+	 * @return boolean Returns true if the product is a reasonable match.
+	 */
+	public boolean equals(Product product) {
+		if (this.UPC == product.getUPC()) {
+			return true;
+		} else if (this.UNSPSC == product.getUNSPSC()) {
+			return true;
+		} else if (this.description == product.getDescription()) {
+			return true;
+		} else if (this.name == product.getName()) {
+			if (this.weight * 1.1 >= product.getWeight() && this.weight * 0.9 <= product.getWeight()) {
+				return true;
+			}
+		}
+		return false;
 	}
 
 }
