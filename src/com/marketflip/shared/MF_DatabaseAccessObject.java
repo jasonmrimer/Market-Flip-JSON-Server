@@ -1,4 +1,4 @@
-package com.marketflip.products;
+package com.marketflip.shared;
 
 public class MF_DatabaseAccessObject {
 

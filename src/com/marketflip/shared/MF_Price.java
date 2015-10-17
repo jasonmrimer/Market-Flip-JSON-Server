@@ -1,4 +1,4 @@
-package com.marketflip.products;
+package com.marketflip.shared;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

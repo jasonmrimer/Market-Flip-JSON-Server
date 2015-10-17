@@ -1,4 +1,4 @@
-package com.marketflip.products;
+package com.marketflip.shared;
 
 import java.net.URL;
 import java.util.ArrayList;
