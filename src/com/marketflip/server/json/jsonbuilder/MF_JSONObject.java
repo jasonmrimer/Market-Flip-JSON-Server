@@ -1,6 +1,6 @@
 package com.marketflip.server.json.jsonbuilder;
 
-public class JSONObject {
+public class MF_JSONObject {
 	
 
 }

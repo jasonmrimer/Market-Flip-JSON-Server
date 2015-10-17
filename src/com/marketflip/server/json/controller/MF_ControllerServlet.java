@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @SuppressWarnings("serial")
-public class ControllerServlet extends HttpServlet {
+public class MF_ControllerServlet extends HttpServlet {
 
 	/**
 	 * Processes all incoming GET requests.

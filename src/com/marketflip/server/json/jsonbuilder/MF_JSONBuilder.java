@@ -1,8 +1,8 @@
 package com.marketflip.server.json.jsonbuilder;
 
-public class JSONBuilder {
+public class MF_JSONBuilder {
 	
-	public JSONBuilder(String request) {
+	public MF_JSONBuilder(String request) {
 		//TODO: Parse request to determine what user wants.
 		//TODO: Call DataAccessObject (Not created) and get data from SQL
 		//TODO: Create toString method that creates nice looking JSON.

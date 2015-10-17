@@ -1,5 +1,5 @@
 package com.marketflip.products;
 
-public class DatabaseAccessObject {
+public class MF_DatabaseAccessObject {
 
 }

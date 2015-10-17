@@ -11,7 +11,7 @@ import java.util.Date;
  * Updated - 09/28/2015
  */
 
-public class Price {
+public class MF_Price {
 
 	private double price;
 	private Date date;
@@ -21,7 +21,7 @@ public class Price {
 	 * Default constructor for Price, sets the price at 0.00, the date to the
 	 * current time and the company to null.
 	 */
-	public Price() {
+	public MF_Price() {
 		this.price = 0.00;
 		this.date = Calendar.getInstance().getTime();
 		this.company = null;
@@ -37,7 +37,7 @@ public class Price {
 	 * @param company
 	 *            The company where the price was found.
 	 */
-	public Price(double price, Date date, String company) {
+	public MF_Price(double price, Date date, String company) {
 		this.price = price;
 		this.date = date;
 		this.company = company;
@@ -51,7 +51,7 @@ public class Price {
 	 * @param date
 	 *            The date and time that the price was found.
 	 */
-	public Price(double price, Date date) {
+	public MF_Price(double price, Date date) {
 		this.price = price;
 		this.date = date;
 		this.company = null;
@@ -65,7 +65,7 @@ public class Price {
 	 * @param company
 	 *            The company where the prices was found.
 	 */
-	public Price(double price, String company) {
+	public MF_Price(double price, String company) {
 		this.price = price;
 		this.company = company;
 		this.date = Calendar.getInstance().getTime();
